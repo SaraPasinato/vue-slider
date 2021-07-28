@@ -9,6 +9,7 @@
 
 .slider img.active{
     display: inline-block;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 .clickable{
@@ -40,4 +41,13 @@
 #slider-dots .dot.active{
     background-color: #00f;
 
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
