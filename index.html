@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-6 ">
                     <figure class="slider d-flex align-items-center">
-                        <img v-for="(image,i) in images" :src="image" alt="" class="img-fluid" :class="isActive(i)">
+                        <img v-for="(image,i) in images" :src="image" alt="" class="img-fluid" :class="isActive(i)" >
                         <div id="slider-dots" class="d-flex justify-content-between align-items-center">
                             <div v-for="(dot,i) in images"class="dot mx-2 clickable" :class="isActive(i)" @click="setCurrent(i)"></div>
                         </div>
