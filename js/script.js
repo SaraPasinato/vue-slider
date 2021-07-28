@@ -12,8 +12,8 @@ Vue.config.devtools = true;
 var app = new Vue({
   el: '#app',
   data: {
-    t:0,
-    time:5000,
+    t: 0,
+    time: 5000,
     current: 0,
     images: [
       "img/image1.jpg",
@@ -34,12 +34,12 @@ var app = new Vue({
     },
 
     isActive(index) {
-     
+
       return this.current === index ? "active" : " ";
     },
-  
-    setCurrent(index){
-      this.current=index;
+
+    setCurrent(index) {
+      this.current = index;
       this.resetPlay();
     },
 
@@ -49,10 +49,10 @@ var app = new Vue({
     },
 
     play() {
-      this.t = setInterval(()=> {
+      this.t = setInterval(() => {
         this.increaseCurrent();
       }, this.time);
-    }
+    },
   },
   created() {
     this.play();
