@@ -28,9 +28,13 @@ var app = new Vue({
     decreaseCurrent() {
       this.current = (this.current === 0 ? (this.images.length - 1) : (this.current - 1));
     },
-    
+
     increaseCurrent() {
       this.current = (this.current === (this.images.length - 1) ? 0 : this.current + 1);
+    },
+
+    setCurrent(index){
+      this.current=index;
     }
   }
 });
