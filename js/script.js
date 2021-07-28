@@ -2,7 +2,7 @@
  ?Descrizione:
  * Rifare l'esercizio dello slider come fatto assieme in classe.
  ?Bonus:
-  Applicare l'autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente.
+  *Applicare l'autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente.
 */
 console.log("HERE", Vue);
 
@@ -13,7 +13,7 @@ var app = new Vue({
   el: '#app',
   data: {
     t:0,
-    time:3000,
+    time:5000,
     current: 0,
     images: [
       "img/image1.jpg",
@@ -54,7 +54,7 @@ var app = new Vue({
       }, this.time);
     }
   },
-  created: function() {
+  created() {
     this.play();
   }
 });
