@@ -13,6 +13,17 @@ Vue.config.devtools=true;
 var app = new Vue({
     el: '#app',
     data: {
-      message: 'Hello Vue!'
+     current:0,
+     images:[
+       "img/image1.jpg",
+       "img/image2.jpg",
+       "img/image3.jpg",
+       "img/image4.jpg",
+     ],
+    },
+    methods:{
+      isActive(index){
+        return this.current===index ? "active": " ";
+      }
     }
-  })
+  });
