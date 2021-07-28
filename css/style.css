@@ -1,5 +1,6 @@
 .slider{
     height: 500px;
+    position: relative;
 }
 
 .slider img{
@@ -17,4 +18,26 @@
 
 .clickable:hover{
     scale: 1.5;
+}
+
+#slider-dots{
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slider-dots .dot{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+#slider-dots .dot.active{
+    background-color: #00f;
+
 }
